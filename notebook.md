@@ -1,27 +1,3 @@
-## Table of Contents
-- [Day 1](#day-1)
-  - [Notes](#notes)
-  - [Practice](#practice)
-- [Day 2](#day-2)
-
--[Notebook Style Guide](#Markdown-Style-Guide-for-Coding-Notebooks)
-
-## Markdown Style Guide for Coding Notebooks
-
-Follow this guide to keep your coding notebook **clear, consistent, and professional**.  
-This ensures your notes are easy for you (and others) to read later.
-
----
-
-## 🔹 Headings
-**When to use:** Organize your notebook into sections (like days, topics, or projects).  
-- `#` for the notebook title (use once at the top).  
-- `##` for each day or major topic.  
-- `###` for subsections (like "Notes", "Practice", "Reflections").  
-
-✅ Example:
-
-
 # My Coding Notebook
 ## Day 1
 ### Notes
@@ -35,7 +11,6 @@ Use italic for emphasis or side comments.
 
 Use inline code for keywords, functions, or commands.
 
-✅ Example:
 
 **Class** = a blueprint for objects  
 *Remember:* always test your code  
@@ -64,17 +39,57 @@ Inline code for short snippets.
 |Object| A specific version of a class. | `Dog myDog = Dog();` |  |  |
 |Property| A variable that belongs to a class/object. | `String name;` |  |  |
 |Method| A function that belongs to a class. | `void bark() {}` |  |  |
-|Constructor| A special function used to set up a class when it’s created. | `Dog(this.name);` |baby with no name gets defalted  |  |
+|Constructor| A special function used to set up a class when it’s created. | `Dog(this.name);` |baby with no name gets named baby girl or baby boy  |  |
 |Abstraction| Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |  |  |
 |Override| Changing how a built-in or inherited function behaves. | `@override` |  |  |
 |Void| A function that does not return a value. | `void printMessage() {}` |  |  |
 Fenced code blocks with language for full examples.
 
-✅ Example:
 
-```java
+
+
+## Flutter Definitions
+
+| Term | Definition and Description | Base Structure | Real Life Example | App Example |
+|------|----------------------------|----------------|-------------------|-------------|
+|Main()| A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  |  |
+|MaterialApp| The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
+|Scaffold| A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  | structrue for each page|
+|Column| A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
+|Row| A widget that shows things side-by-side. | `Row(...)` |  |  |
+|Container| A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  |
+|Text| A widget to display text on the screen. | `Text('Hello')` |  |  |
+|Image.network| A widget to show an image using a link from the internet. | `Image.network('https://...')` |google images|  |
+
+|onPressed| A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
+
+|StatelessWidget| The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
+
+|@override| A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |  |
+
+|build()| A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |  |
+
+|BuildContext| Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
+
+|super.key| Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  |
+
+|      | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
+
+|      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
+
+|      | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
+
+|      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
+
+|      | Required in every widget class to describe what to show. | `build` |  |  |
+
+|      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
+
+|      | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
+
+|      | A keyword that means the value won't change and is set once. | `const` |  |  |
 public class Hello {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
         System.out.println("Hello World!");
     }
 }
