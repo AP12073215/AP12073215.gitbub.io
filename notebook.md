@@ -60,17 +60,11 @@ Fenced code blocks with language for full examples.
 |Container| A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  |
 |Text| A widget to display text on the screen. | `Text('Hello')` |  |  |
 |Image.network| A widget to show an image using a link from the internet. | `Image.network('https://...')` |google images|  |
-
 |onPressed| A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
-
 |StatelessWidget| The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
-
 |@override| A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |  |
-
 |build()| A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |  |
-
 |BuildContext| Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
-
 |super.key| Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  |
 
 |      | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
