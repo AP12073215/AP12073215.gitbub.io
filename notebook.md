@@ -17,7 +17,8 @@ Use inline code for keywords, functions, or commands.
 Use `System.out.println()` to print
 💻 Code Blocks
 When to use: Anytime you write multiple lines of code.
-
+| Algorithms | Define step by step processes to follow when completing a task or solving a problem | no syntax | Make a grilled cheese | Verify user |
+| Sequencing | Define an order for when steps in an algorithm are completed | Follows 1, 2, 3 | which step comes first in making a grilled cheese | Get bread, add butter, add cheese |
 Inline code for short snippets.
 
 | Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
@@ -92,4 +93,6 @@ public class Hello {
 }
 ```
 ###string notes
+
+
 string have indices (plural for index,) which starts at 0. "Hello" has indices 0(H), 1(e). 9
