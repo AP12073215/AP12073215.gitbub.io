@@ -67,7 +67,7 @@ Fenced code blocks with language for full examples.
 |build()| A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |  |
 |BuildContext| Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
 |super.key| Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  |
-
+|index| location value of each character in a string or list, starting at 0|"Hello" index of 'e' is 1|||
 |      | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
 
 |      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
